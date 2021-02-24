@@ -11,6 +11,13 @@ This section will contain my curated resources which helped me during aws machin
 AWS Certified Machine Learning – Study Notes
 
 > These notes are written by a data scientist, so some basic topics may be glanced over
+- [aws-machine-learning-university-accelerated-nlp](https://github.com/aws-samples/aws-machine-learning-university-accelerated-nlp)
+- [amazon-rekognition-video-analyzer](https://github.com/aws-samples/amazon-rekognition-video-analyzer)
+- [amazon-rekognition-virtual-proctor](https://github.com/aws-samples/amazon-rekognition-virtual-proctor)
+- [amazon-rekognition-video-analyzer](https://github.com/aws-samples/amazon-rekognition-video-analyzer)
+- [amazon-textract-comprehend-OCRimage-search-and-analyze](https://github.com/aws-samples/amazon-textract-comprehend-OCRimage-search-and-analyze)
+- [amazon-comprehend-medical-fhir-integration](https://github.com/aws-samples/amazon-comprehend-medical-fhir-integration)
+- [workshop-textract-comprehend-es](https://github.com/amitkayal/workshop-textract-comprehend-es)
 
 ## 1. [Machine learning concepts](01-concepts.md)
 
