@@ -678,3 +678,4 @@ Sagemaker deploys to a public VPC by defaults
 2. [SageMaker FAQ](https://aws.amazon.com/sagemaker/faqs/)
 3. Blog Posts
    - [Passing the AWS Certified Machine Learning Specialty Exam](https://blog.thecloudtutor.com/2019/03/18/Passing-the-AWS-Certified-Machine-Learning-Specialty-Exam-MLS-C01.html)
+
