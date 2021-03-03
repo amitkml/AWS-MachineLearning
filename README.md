@@ -18,6 +18,10 @@ AWS Certified Machine Learning – Study Notes
 - [amazon-textract-comprehend-OCRimage-search-and-analyze](https://github.com/aws-samples/amazon-textract-comprehend-OCRimage-search-and-analyze)
 - [amazon-comprehend-medical-fhir-integration](https://github.com/aws-samples/amazon-comprehend-medical-fhir-integration)
 - [workshop-textract-comprehend-es](https://github.com/amitkayal/workshop-textract-comprehend-es)
+- [AWS Ramp-Up Guide: Machine Learning](https://d1.awsstatic.com/training-and-certification/ramp-up_guides/Ramp-Up_Guide_Machine_Learning.pdf)
+- [Machine Learning & Machine Learning Operations: How Sagemaker helps you achieve this | Phil Basford](https://www.youtube.com/watch?v=Cv4dDqcTA98&feature=youtu.be)
+
+
 
 ## 1. [Machine learning concepts](01-concepts.md)
 
