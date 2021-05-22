@@ -180,5 +180,13 @@ with query capabilities. |
 
 ![img](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/Reference_Architecture.JPG?raw=true)
 
+Following are the AWS services will be used to achieve this **Reference Architecture**.
 
+![im](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/aws_services.JPG?raw=true)
+
+### Augmented AI Reference Workflow
+
+Amazon A2I helps to **integrate** Amazon Textract, Amazon Rekognition, or a custom ML model into your workflow. When you create a **flow definition** you will be able to **specify conditions, such as confidence thresholds, that will trigger a human review**. 
+
+The following diagram provides a high-level reference workflow to enhance case managers’ / case workers’ productivity; A2I is built into the workflow and human review is only needed when a document’s confidence level falls below a certain threshold.
 
