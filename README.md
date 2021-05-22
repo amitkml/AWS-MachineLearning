@@ -22,7 +22,6 @@ AWS Certified Machine Learning – Study Notes
 - [Machine Learning & Machine Learning Operations: How Sagemaker helps you achieve this | Phil Basford](https://www.youtube.com/watch?v=Cv4dDqcTA98&feature=youtu.be)
 
 
-
 ## 1. [Machine learning concepts](01-concepts.md)
 
 - Machine learning lifecycle
@@ -31,6 +30,10 @@ AWS Certified Machine Learning – Study Notes
 - Regularisation (L1 Lasso & L2 Ridge)
 - Hyperparameters
 - Cross-validation
+## AWS ML OPS Architecture
+
+- [ML OPS](https://docs.aws.amazon.com/solutions/latest/aws-mlops-framework/aws-mlops-framework.pdf?did=sl_card-guide&trk=sl_card-guide)
+- [AWS ML OPS](https://aws.amazon.com/solutions/implementations/aws-mlops-framework/?did=sl_card&trk=sl_card)
 
 ## Machine learning life-cycle
 
