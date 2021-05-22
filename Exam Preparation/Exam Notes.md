@@ -58,3 +58,21 @@ A simple but powerful technique to validate your data model is to take a subset 
 
 As shown in Figure 3, calculating error costs can show that an otherwise well-performing model (based on otherwise good metrics) might not be economically feasible.
 
+![error](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/Impact_Error_Costs.JPG?raw=true?)
+
+An example of such an approach is shown in [Training models with unequal economic error costs using Amazon SageMaker](https://aws.amazon.com/blogs/machine-learning/training-models-with-unequal-economic-error-costs-using-amazon-sagemaker/) .19 Here, the differential costs of errors changes the ML model used to predict breast cancer, producing fewer false negatives (undesirable and expensive) at the cost of more false positives, while still producing a cheaper model overall.
+
+### Using Scorecards to Manage and Mitigate Risk
+
+The sample scorecards are separated into five topics:
+
+- **Project context** – Addresses the social, business, and regulatory environment of the project
+- **Financial** – Identifies the costs and benefits of the problem you are trying to solve with ML, and of the ML system you are developing
+- **Data quality** – Highlights areas that are frequently problematic in ML projects, and that can easily mislead the project—missing a signal that exists in the data or believing a signal exists where there is none—if not identified and addressed
+- **Project processes** – Addresses processes in the ML project that are easily overlooked in the excitement of developing and testing the algorithm and identifying promising results
+- **Summary** – Captures the key risk areas to bring to executive attention
+
+## Machine Learning Foundations: Evolution of ML and AI
+
+### AWS and Machine Learning
+
