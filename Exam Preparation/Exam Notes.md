@@ -2,6 +2,10 @@
 
 [TOC]
 
+![IM](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/ML_Exam.JPG?raw=true)
+
+
+
 ## Managing ML Projects
 
 ### Documenting the Data Catalog and Pipeline
@@ -142,4 +146,15 @@ inappropriate content. Amazon Rekognition also provides highly accurate facial a
 ## Augmented AI: The Power of Human and Machine
 ### Challenges for agencies dealing with benefits programs
 
-- Customer/Beneficiary experience:
+- Customer/Beneficiary experience: Legacy benefits systems often provide poor consumer
+  experience as they cannot scale to meet the surge during an open enrollment or
+  during a crisis situation. AWS cloud offers multiple options to help address these
+  challenges.
+- Workforce productivity: Benefits application documents can include federal tax forms, pay stubs, SSN, and etc. These documents are in multiple formats. such as PDFs and images, and are submitted from various sources such as the web, mail-in, and contact centers. The work force spends a significant amount of time to review, process, and validate these documents. AWS offers multiple services including Amazon Augmented AI, to address these challenges through process automation.
+- Data scale, size, privacy and security: For example, Healthcare.gov alone handled over 10.7 Million applications during the 2019 open enrollment period. AWS provides multiple storage options
+  including the Amazon Simple Storage Service (Amazon S3) to address this challenge.
+- Large call volumes:  For example, the Social Security Administration (SSA) handled over 50 Million calls5 during FY-2019. AWS has a number of services including Amazon Connect, and Amazon Lex to enable these capabilities.
+- Insights into program operations: Having access to data-driven insights enables agencies to build programs and advocate for innovative policy changes to better serve constituents. AWS provides a number of analytics and AI/ML services to address these challenges.
+
+### High level framework to address challenges with benefits enrollment
+
