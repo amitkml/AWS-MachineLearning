@@ -1,5 +1,7 @@
 # Notes from AWS ML Whitepapers
 
+[TOC]
+
 ## Managing ML Projects
 
 ### Documenting the Data Catalog and Pipeline
@@ -76,3 +78,68 @@ The sample scorecards are separated into five topics:
 
 ### AWS and Machine Learning
 
+- The first layer shows AI Services, which are intended for builders creating specific
+  solutions that require prediction, recommendation, natural language, speech, vision, or
+  other capabilities. These intelligent services are created using machine learning, and
+  especially deep learning models, but do not require the developer to have any
+  knowledge of machine learning to use them.
+- 
+
+![svc](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/AWS-ML-Services.JPG?raw=true)
+
+| AWS Service               | Purpose                                                      |
+| ------------------------- | ------------------------------------------------------------ |
+| Amazon Forecast           | Amazon Forecast is a fully managed service that delivers highly accurate forecasts, and is based on the same technology used at Amazon.com. You provide historical data plus
+any additional data that you believe impacts your forecasts. Amazon Forecast examines
+the data, identifies what is meaningful and produces a forecasting model. |
+| Amazon Personalize        | Amazon Personalize makes it easy for developers to create individualized product and content recommendations for customers using their applications. You provide an activity stream from your application, inventory of items you want to recommend and potential demographic information from your users. Amazon Personalize processes and examines the data, identifies what is meaningful, selects the right algorithms, and trains and optimizes a personalization model. |
+| Amazon Lex                | Amazon Lex is a service for building conversational interfaces into any application using voice and text. Amazon Lex provides the advanced deep learning functionalities of automatic speech recognition (ASR) for converting speech to text, and natural language understanding (NLU) to recognize the intent of the text, to enable you to build applications with highly engaging user experiences and lifelike conversational
+interactions. With Amazon Lex, the same deep learning technologies that power
+Amazon Alexa are now available to any developer, enabling you to quickly |
+| Amazon Lex                | Amazon Lex is a service for building conversational interfaces into any application using voice and text. Amazon Lex provides the advanced deep learning functionalities of automatic speech recognition (ASR) for converting speech to text, and natural language understanding (NLU) to recognize the intent of the text, to enable you to build applications with highly engaging user experiences and lifelike conversational
+interactions. With Amazon Lex, the same deep learning technologies that power
+Amazon Alexa are now available to any developer, enabling you to quickly and easily
+build sophisticated, natural language, conversational bots (“chatbots”). |
+| Amazon Comprehend         | Amazon Comprehend is a natural language processing (NLP) service that uses machine learning to find insights and relationships in text. Amazon Comprehend
+identifies the language of the text; extracts key phrases, places, people, brands, or
+events; understands how positive or negative the text is and automatically organizes a
+collection of text files by topic. |
+| Amazon Comprehend Medical | Amazon Comprehend Medical is a natural language processing service that extracts relevant medical information from unstructured text using advanced machine learning
+models. You can use the extracted medical information and their relationships to build
+or enhance applications |
+| Amazon Translate          | Amazon Translate is a neural machine translation service that delivers fast, high-quality, and affordable language translation. Neural machine translation is a form of language translation automation that uses deep learning models to deliver more accurate and more natural sounding translation than traditional statistical and rule-based translation algorithms. Amazon Translate allows you to localize content - such as websites and applications - for international users, and to easily translate large volumes of text efficiently. |
+| Amazon Polly              | Amazon Polly is a service that turns text into lifelike speech, allowing you to create applications that talk, and build entirely new categories of speech-enabled products.
+Amazon Polly is a Text-to-Speech service that uses advanced deep learning
+technologies to synthesize speech that sounds like a human voice. |
+| Amazon Transcribe         | Amazon Transcriber is an automatic speech recognition (ASR) service that makes it easy for developers to add speech-to-text capability to their applications. Using the
+Amazon Transcribe API, you can analyze audio files stored in Amazon S3 and have the
+service return a text file of the transcribed speech. |
+| Amazon Rekognition        | Amazon Rekognition makes it easy to add image and video analysis to your applications. You just provide an image or video to the Rekognition API, and the service
+can identify the objects, people, text, scenes, and activities, as well as detect any
+inappropriate content. Amazon Rekognition also provides highly accurate facial analysis and facial recognition. You can detect, analyze, and compare faces for a wide variety of user verification, cataloging, people counting, and public safety use cases. |
+| Amazon Textract           | Amazon Textract automatically extracts text and data from scanned documents and forms, going beyond simple optical character recognition to identify contents of fields in forms and information stored in tables |
+
+### Amazon SageMaker
+
+- Fully-managed machine learning (ML) service that enables developers and data scientists to quickly and easily build, train, and deploy machine learning models at any scale.
+
+- SageMaker sets up and manages environments for training, and provides hyperparameter optimization with Automatic Model Tuning to make the model as accurate as possible
+- SageMaker deployments run models spread across availability zones to deliver high performance and high availability
+
+### Amazon SageMaker GroundTruth
+
+- Helps build data sets quickly and accurately using an active learning model to label data combing machine learning and human interaction to make the model progressively better.
+
+### SageMaker Neo
+
+- Sagemaker Neo allows you to deploy the same trained model to  multiple platforms. Using machine learning, Neo optimizes the performance and size of the model and deploys to edge devices containing the Neo runtime. 
+
+### Amazon EMR/EC2 with Spark/Spark ML
+
+- provides a managed Hadoop framework that makes it easy, fast, and cost-effective to process vast amounts of data across dynamically scalable Amazon EC2 instances. 
+- Spark and Spark ML can also be run on Amazon EC2 instances to pre-process data, engineer features or run machine learning models
+
+## Augmented AI: The Power of Human and Machine
+### Challenges for agencies dealing with benefits programs
+
+- Customer/Beneficiary experience:
