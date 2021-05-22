@@ -178,5 +178,7 @@ with query capabilities. |
 
 ### Reference Architecture and Best Practices
 
+![img](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/Reference_Architecture.JPG?raw=true)
+
 
 
