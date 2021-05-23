@@ -190,3 +190,12 @@ Amazon A2I helps to **integrate** Amazon Textract, Amazon Rekognition, or a cust
 
 The following diagram provides a high-level reference workflow to enhance case managers’ / case workers’ productivity; A2I is built into the workflow and human review is only needed when a document’s confidence level falls below a certain threshold.
 
+![im](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/a2i_workflow.JPG?raw=true)
+
+## Machine Learning Lens - AWS Well-Architected Framework
+
+
+
+
+  
+
