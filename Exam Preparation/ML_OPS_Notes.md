@@ -25,5 +25,8 @@ Prediction server can be hosted into
 
 Now, we need to think about data for the project. **One of the problem with data is that, consistency of data labelling**.
 
-![im](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/speech_data.JPG?raw=true)
+- how we will handle when each of the speaker volumes or pronunciations are different?
+- How we will handle labelling consistently
+
+![im](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/speech_data_collection.JPG?raw=true)
 
