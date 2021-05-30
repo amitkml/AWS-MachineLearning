@@ -23,3 +23,7 @@ Prediction server can be hosted into
 
 ![im](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/speech_scoping.JPG?raw=true)
 
+Now, we need to think about data for the project. **One of the problem with data is that, consistency of data labelling**.
+
+![im](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/speech_data.JPG?raw=true)
+
