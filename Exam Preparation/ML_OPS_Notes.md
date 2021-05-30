@@ -17,3 +17,7 @@ Prediction server can be hosted into
 
 ## Steps of a ML Project
 
+![im](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/ML_Project_lifecycle.JPG?raw=true)
+
+### Case study: speech recognition
+
