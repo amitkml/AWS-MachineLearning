@@ -194,8 +194,160 @@ The following diagram provides a high-level reference workflow to enhance case m
 
 ## Machine Learning Lens - AWS Well-Architected Framework
 
+### E2E ML Process
 
+![im](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/E2E_ML_Process.JPG?raw=true)
 
+#### Business Goal Identification
 
-  
+For an ML-based approach to be successful, having an abundance of relevant, high-quality data that is
+applicable to the algorithm that you are trying to train is essential. Carefully evaluate the availability
+of the data to make sure that the correct data sources are available and accessible.
+
+Apply these best practices:
+
+- Understand business requirements
+- Form a business question
+- Determine a project’s ML feasibility and data requirements
+- Evaluate the cost of data acquisition, training, inference, and wrong predictions
+- Review proven or published work in similar domains, if available
+- Determine key performance metrics, including acceptable errors
+- Define the machine learning task based on the business question
+- Identify critical, must have features
+
+#### ML Problem Framing
+
+Apply these best practices:
+
+- Define criteria for a successful outcome of the project
+- Establish an observable and quantifiable performance metric for the project, such as accuracy,
+  prediction latency, or minimizing inventory value
+- Formulate the ML question in terms of inputs, desired outputs, and the performance metric to be
+  optimized
+- Evaluate whether ML is a feasible and appropriate approach
+- Create a data sourcing and data annotation objective, and a strategy to achieve it
+- Start with a simple model that is easy to interpret, and which makes debugging more manageable
+
+#### Data Collection
+
+- AWS provides you with a number of ways to ingest data in bulk from static resources, or from new,
+  dynamically generated sources, such as websites, mobile apps, and internet-connected devices. 
+- For example, you can build a highly scalable data lake using Amazon Simple Storage Service (Amazon S3). To easily set up your data lake, you can use AWS Lake Formation.
+
+- You can physically transfer petabytes of data in batches using AWS Snowball, or, if you have
+  exabytes of data, by using AWS Snowmobile.
+- use Amazon Kinesis Data Firehose to collect and ingest multiple streaming-data sources.
+- Use a centralized approach to store your data, such as a data lake.
+- Confirm the availability of the data, both quantity and quality
+
+#### Data Preparation
+
+AWS provides several services that you can use to annotate your data, extract, transfer, and load (ETL)
+data at scale. 
+
+- Start with a small, statistically valid set of sample data for data preparation
+- Iteratively experiment with different data preparation strategies
+- Implement a feedback loop during the data cleaning process that provides alerts for anomalies
+  through the data preparation steps
+- Enforce data integrity continuously
+- Take advantage of managed ETL services
+
+**Data preparation applies not only to the training data used for building a machine learning model,**
+**but also to the new business data that is used to make inferences against the model after the model is deployed. Typically, the same sequence of data processing steps that you apply to the training data is also applied to the inference requests.**
+
+- **Amazon SageMaker** is a *fully managed service* that encompasses the *entire ML workflow* to label
+  and prepare your data, choose an algorithm, train it, tune and optimize it for deployment, and make
+  prediction
+
+- **Amazon SageMake**r Ground Truth offers easy *access to public and private human labelers* and provides *built-in workflows* and user interfaces for common labeling tasks. It uses a machine learning model to *automatically label raw data* to produce high-quality training datasets quickly at a fraction of the cost of manual labeling. Data is *only routed to humans if the active learning model cannot confidently label it*. The service provides *dynamic custom workflows*, job chaining, and job tracking to save time on subsequent ML labeling jobs by using the output from previous labeling jobs as the input to new labeling jobs.
+- **AWS Glue** is a fully managed *extract, transform, and load (ETL)* service that can be used to *automate*
+  the ETL pipeline. AWS Glue *automatically discovers and profiles your data* with the Glue Data Catalog,
+  recommends and generates ETL code to transform your source data into target schemas, and runs the
+  ETL jobs on a *fully managed, scale-out Apache Spark environment to load your data to its destination*. It
+  also enables you to set up, orchestrate, and monitor complex data flows.
+
+- **Amazon EMR** provides a *managed Hadoop framework* that makes it easy and fast to process *vast*
+  *amounts of data across dynamically scalable Amazon EC2 instances*.
+
+- **Amazon SageMaker** Inference Pipeline deploys pipelines so that you can pass raw input data and
+  execute pre-processing, predictions, and post-processing on both real-time and batch inference requests. Inference pipelines enable you to *reuse existing data processing functionality*.
+
+### Data Visualization and Analytics
+
+A key aspect to understanding your data is to identify patterns.AWS provides several services that you can use to visualize and analyze data at scale.
+
+Apply these best practices:
+
+- Profile your data (categorical vs. ordinal vs. quantitative visualization)
+- Choose the correct tool or combination of tools for your use case (such as data size, data complexity,
+  and real-time vs. batch)
+- Monitor your data analysis pipeline
+- Validate assumptions about your data
+
+- **Amazon SageMaker** provides a hosted Jupyter notebook environment that you can use to visualize and analyze data. Project Jupyter is an open-source web application that allows you to create visualizations and narrative text, as well as perform data cleaning, data transformation, numerical simulation, statistical modeling, and data visualization.
+- **Amazon Athena** is a fully managed interactive query service that you can use to query data in Amazon
+  S3 using ANSI SQL operators and functions. Amazon Athena is serverless and can scale seamlessly to
+  meet your querying demands.
+- **Amazon Kinesis Data Analytics** provides real-time analytic capabilities by analyzing streaming data to
+  gain actionable insights. The service scales automatically to match the volume and throughput of your
+  incoming data.
+- **Amazon QuickSight** is a cloud-powered business intelligence (BI) service that provides dashboards and visualizations. The service automatically scales to support hundreds of users and offers secure sharing and collaboration for storyboarding. Additionally, the service has built-in ML capabilities that provide out-of-the-box anomaly detection, forecasting, and what-if analysis.
+
+### Feature Engineering
+
+Every unique attribute of the data is considered a feature. Feature engineering is a process to select and transform variables when creating a predictive model using machine learning or statistical modeling. **Feature engineering typically includes feature creation,feature transformation, feature extraction, and feature selection**.
+
+- **Feature creation** identifies the features in the dataset that are relevant to the problem at hand.
+- **Feature transformation** manages replacing missing features or features that are not valid. Some
+  techniques include forming Cartesian products of features, non-linear transformations (such as
+  binning numeric variables into categories), and creating domain-specific features.
+- **Feature extraction** is the process of creating new features from existing features, typically with the
+  goal of reducing the dimensionality of the features.
+- **Feature selection** is the filtering of irrelevant or redundant features from your dataset. This is usually
+  done by observing variance or correlation thresholds to determine which features to remove.
+
+**Amazon SageMaker provides a Jupyter notebook environment with Spark and scikit-learn preprocessors that you can use to engineer features and transform the data. From Amazon SageMaker, you can also run feature extraction and transformation jobs using ETL services, such as AWS Glue or Amazon EMR. In addition, you can use Amazon SageMaker Inference Pipeline to reuse existing data processing functionality**.
+
+Apply these best practices:
+
+- Use domain experts to help evaluate the feasibility and importance of features
+- Remove redundant and irrelevant features (to reduce the noise in the data and reduce correlations)
+- Start with features that generalize across contexts
+- Iterate as you build your model (new features, feature combinations, and new tuning objectives)
+
+### Model Training
+
+- A training algorithm computes several metrics, such as training error and prediction accuracy. 
+
+- A classification algorithm can be measured by a confusion matrix that captures true or false positives and true or false negatives, while a regression algorithm can be measured by root mean square error (RMSE).
+
+- The number and type of hyperparameters in ML algorithms are specific to each model. Some examples of commonly used hyperparameters are: Learning Rate, Number of Epochs, Hidden Layers, Hidden Units, and Activation Functions. Hyperparameter tuning, or optimization, is the process of choosing the optimal model architecture.
+- Amazon SageMaker provides several popular built-in algorithms that can be trained with the training
+  data that you prepared and stored in Amazon S3.
+- Sagemaker allows custom training and the custom algorithm should be containerized using Amazon ECS and Amazon ECR.
+- You can choose to train on a single instance or on a distributed cluster of instances. The infrastructure
+  management that is needed for the training process is managed by Amazon SageMaker
+- **Amazon SageMaker**
+  - Automated training
+  - hyperparameter tuning job
+  - pre-built in algo
+  - custom training
+- **Amazon SageMaker Debugger**
+  - provides visibility into the ML training process by monitoring, recording, and analyzing data that captures the state of a training job at periodic intervals.
+  - it can automatically detect and alert you to commonly occurring errors, such as gradient values getting too large or too small.
+- **Amazon SageMaker Autopilot**
+  - It allows you to build classification and regression models simply by providing training data in tabular format.
+  - This capability explores multiple ML solutions with different combinations of data preprocessors, algorithms, and algorithm parameter settings, to find the most accurate model.
+  - Amazon SageMaker Autopilot selects the best algorithm from the list of high-performing algorithms that it natively supports. It also automatically tries different parameter settings on those algorithms to get the best model quality. 
+  - You can then directly deploy the best model to production, or evaluate multiple candidates to trade off metrics like accuracy, latency, and model size.
+- **AWS Deep Learning AMI and AWS Deep Learning Containers**
+  - AWS Deep Learning AMI has popular deep learning frameworks and interfaces preinstalled, such as TensorFlow, PyTorch, Apache MXNet, Chainer, Gluon, Horovod, and Keras
+- **Amazon EMR**
+  - Has distributed cluster capabilities
+  - Has an option for running training jobs on the data that is either stored locally on the cluster or in Amazon S3.
+
+### Model Evaluation and Business Evaluation
+
+- Evaluate your model using historical data (offline evaluation) or live data (online evaluation).
+- Model validation can be performed using Amazon SageMaker, AWS Deep Learning AMI, or Amazon EMR.
 
