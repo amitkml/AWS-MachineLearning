@@ -13,3 +13,7 @@ Prediction server can be hosted into
 
 ![img](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/deployment_architecture.JPG?raw=true)
 
+![MLInfra](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/ML_Infratructure.JPG?raw=true)
+
+## Steps of a ML Project
+
