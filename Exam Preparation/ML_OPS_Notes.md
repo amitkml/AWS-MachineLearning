@@ -21,3 +21,5 @@ Prediction server can be hosted into
 
 ### Case study: speech recognition
 
+![im](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/speech_scoping.JPG?raw=true)
+
