@@ -89,6 +89,10 @@ First, we always run Shadow Mode and then Canary Mode.
 
 ### Canary Mode
 
+![im](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/canary_deployment.JPG?raw=true)
+
+### Blue Green Deployment
+
 
 
 
