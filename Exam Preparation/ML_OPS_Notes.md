@@ -21,7 +21,7 @@ Prediction server can be hosted into
 
 ![im](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/ML_Project_lifecycle.JPG?raw=true)
 
-### Case study: speech recognition
+### Case study: speech recognition ML Project
 
 #### Scoping
 
@@ -49,3 +49,39 @@ The following slide says that there are two approaches
   - Work on data optimization first based on error analysis. Sometime, we might need to work on model also which is not very common though.
 
 ![im](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/speech_modelling.JPG?raw=true)
+
+#### Deployment
+
+> Monitoring is key for such deployment to ensure we can detect data drift. **One classic example is that a speech recognition system tuned with adult voice may start deteriorating when teenager used the application.** 
+>
+> So, we need to have a appropriate monitoring to detect such problem and then we should know how to detect such problem.
+>
+> **Concept Drift**
+>
+> - When relationship between Input and output changes
+>
+> **Data Drift**
+>
+> - When data distribution pattern gets changes
+
+![im](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/speech_deployment.JPG?raw=true)
+
+##### Software Engineering issues
+
+*checklist of questions*
+
+- Batch or real-time?
+- Cloud vs Edge/Browser
+- Compute resource availability (CPU/GPU/Memory)
+- Latency and throughput (Query per second - QPS) requirements
+- Logging requirements for analysis, review and retraining
+- security and privacy requirements
+
+## Deployment patterns
+
+
+
+
+
+
+
