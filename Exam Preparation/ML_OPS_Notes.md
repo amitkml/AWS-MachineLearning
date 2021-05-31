@@ -79,6 +79,8 @@ The following slide says that there are two approaches
 
 ## Deployment patterns
 
+![im](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/commom_deployment.JPG?raw=true)
+
 
 
 
