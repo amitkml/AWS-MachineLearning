@@ -99,9 +99,23 @@ First, we always run Shadow Mode and then Canary Mode.
 
 ### Dashboard
 
+- always set threshold for such alarms to teams
+
+- adapt threshold gradually
+
+   
+
 ![im](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/monitoring_dashboard.JPG?raw=true)
 
-### Metrices to Track
+### Deployment Monitoring
+
+- Manual Retraining
+
+- Automatic Retraining (Difficult and Uncommon)
+
+![im](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/Capture.JPG?raw=true)
+
+## Pipeline monitoring
 
 
 
