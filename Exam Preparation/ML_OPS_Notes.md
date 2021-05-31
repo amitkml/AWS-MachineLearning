@@ -95,6 +95,14 @@ First, we always run Shadow Mode and then Canary Mode.
 
 ![im](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/blue-green-deployment.JPG?raw=true)
 
+## Monitoring
+
+### Dashboard
+
+![im](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/monitoring_dashboard.JPG?raw=true)
+
+### Metrices to Track
+
 
 
 
