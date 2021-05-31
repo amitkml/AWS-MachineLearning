@@ -81,6 +81,14 @@ The following slide says that there are two approaches
 
 ![im](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/commom_deployment.JPG?raw=true)
 
+First, we always run Shadow Mode and then Canary Mode.
+
+### Shadow Mode
+
+![im](https://github.com/amitkml/AWS-MachineLearning/blob/main/img/shadow_mode_deployment.JPG?raw=true)
+
+### Canary Mode
+
 
 
 
