@@ -2,6 +2,17 @@
 
 This repo will contain all my learning and experimentation with serverless machine learning architectrure. I am primarily focussed in AWS platform and all my article will be utilizing AWS machine learning services.
 
+## Deployment
+- Learn Bubble
+- Deploy ML APIs
+- AWS, Gcloud startup credits
+- Stripe Integration
+- Send grid email Integration
+- Applied for GPT3 production
+- Prepared privacy policies, terms, etc
+- Domain mapping on Namecheap
+- Gsuite email setup
+
 ## Curated resource in Serverless Machine Learning Architectecture(AWS)
 
 This section will contain my curated resources which helped me during aws machine learning serverless learning.
